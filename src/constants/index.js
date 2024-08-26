@@ -150,7 +150,7 @@ const experiences = [
     icon: tesla,
     location:"Dubai, U.A.E",
     iconBg: "#383E56",
-    date: "Jan 2022 - June 2022",
+    date: "July 2024 - September 2024",
     points: [
       "Spearheaded the end-to-end development of an innovative web application enabling automatic question paper generation, reducing manual effort by 80% through advanced algorithms and seamless integration of React, Node.js, and SQL.",
       "Designed and optimized a custom algorithm that dynamically generates multiple question papers simultaneously, tailored to specific requirements such as subject, topic, and difficulty, boosting efficiency and scalability for educational institutions.",
@@ -408,6 +408,16 @@ const life = [
       "Minor in AI and Machine learning",
       "IITM Pravartak Fellow"
     ],
+  },
+    {
+    title: "Product Manager",
+    company_name: "ATP STEM Education and Training Services",
+    icon: tesla,
+    location:"Dubai, U.A.E",
+    iconBg: "#ffffff",
+    date: "July 2024 - September 2024",
+    points: [],
+    type:'work',
   },
   {
     title: "Research - Data Science Intern",
