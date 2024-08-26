@@ -153,7 +153,7 @@ const experiences = [
     iconBg: "#ffffff",
     date: "June 2024 - July 2023",
     points: [
-      "Worked in the Research Insights and Media Analytics team.",
+      "Successfully handled and analyzed over 2 million data points, including minute-by-minute, daily, and monthly TRP, Share, and Reach metrics for various demographics and channels.",
     ],
   },
   {
