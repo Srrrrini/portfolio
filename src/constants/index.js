@@ -144,7 +144,19 @@ const technologies = [
 ];
 
 const experiences = [
-  
+  {
+    title: "Product Manager",
+    company_name: "ATP STEM Education and Training Services",
+    icon: tesla,
+    location:"Dubai, U.A.E",
+    iconBg: "#383E56",
+    date: "Jan 2022 - June 2022",
+    points: [
+      "Spearheaded the end-to-end development of an innovative web application enabling automatic question paper generation, reducing manual effort by 80% through advanced algorithms and seamless integration of React, Node.js, and SQL.",
+      "Designed and optimized a custom algorithm that dynamically generates multiple question papers simultaneously, tailored to specific requirements such as subject, topic, and difficulty, boosting efficiency and scalability for educational institutions.",
+      "Developed an intelligent extraction system that parsed individual questions and metadata from Word documents, converting them to LaTeX and storing them in a structured database, automating and streamlining the entire question upload process.",
+    ],
+  },
   {
     title: "Research - Data Science Intern",
     company_name: "MBC Group",
@@ -154,6 +166,7 @@ const experiences = [
     date: "June 2024 - July 2023",
     points: [
       "Successfully handled and analyzed over 2 million data points, including minute-by-minute, daily, and monthly TRP, Share, and Reach metrics for various demographics and channels.",
+      "Developed robust models for forecasting time series data using ARIMA, Exponential Smoothing, and Long Short-Term Memory (LSTM) networks, and conducted seasonality tests, including the Augmented Dickey-Fuller (ADF) test, Kwiatkowski-Phillips-Schmidt-Shin (KPSS) test and Seasonal Mann-Kendall test to ensure reliability and accuracy.",
     ],
   },
   {
