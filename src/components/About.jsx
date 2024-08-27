@@ -49,7 +49,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-3 text-secondary text-[20px] max-w-6xl leading-[30px]"
       >
-I am a graduate student pursuing a Master of Science in Mechanical Engineering - Research at Carnegie Mellon University. 
+I am a graduate student pursuing the Master of Science in Mechanical Engineering - Research program at Carnegie Mellon University. 
 <br></br>
 I recently completed my Bachelor of Technology with Honors in Mechanical Engineering from the Indian Institute of Technology Madras, along with a minor in Artificial Intelligence and Machine Learning.
         
