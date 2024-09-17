@@ -204,9 +204,9 @@ const education = [
     company_name: "Master of Science in Mechanical Engineering - Research",
     icon: CMU,
     location:"Pittsburgh, U.S.A",
-    iconBg: "#bb0000",
+    iconBg: "#ffffff",
     date: "August 2024 - Present",
-    points: [],
+    points: ["Researching task planning and mapping for heterogeneous robot teams to enable efficient multi-agent collaboration in Roboteam, under Prof. Kenji Shimada at CERLAB."],
   },
   {
     title: "Indian Institute of Technology, Madras",
@@ -393,9 +393,9 @@ const life = [
     company_name: "Master of Science in Mechanical Engineering - Research",
     icon: CMU,
     location:"Pittsburgh, U.S.A",
-    iconBg: "#bb0000",
+    iconBg: "#ffffff",
     date: "August 2024 - Present",
-    points: [],
+    points: ["Researching task planning and mapping for heterogeneous robot teams to enable efficient multi-agent collaboration in Roboteam, under Prof. Kenji Shimada at CERLAB."],
   },
   {
     title: "Indian Institute of Technology, Madras",
