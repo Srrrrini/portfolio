@@ -150,7 +150,7 @@ const experiences = [
     icon: tesla,
     location:"Dubai, U.A.E",
     iconBg: "#383E56",
-    date: "July 2024 - September 2024",
+    date: "July 2024 - October 2024",
     points: [
       "Spearheaded the end-to-end development of an innovative web application enabling automatic question paper generation, reducing manual effort by 80% through advanced algorithms and seamless integration of React, Node.js, and SQL.",
       "Designed and optimized a custom algorithm that dynamically generates multiple question papers simultaneously, tailored to specific requirements such as subject, topic, and difficulty, boosting efficiency and scalability for educational institutions.",
@@ -206,7 +206,9 @@ const education = [
     location:"Pittsburgh, U.S.A",
     iconBg: "#ffffff",
     date: "August 2024 - Present",
-    points: ["Researching task planning and mapping for heterogeneous robot teams to enable efficient multi-agent collaboration in Roboteam, under Prof. Kenji Shimada at CERLAB."],
+    points: ["Implemented the FAST-LIO2 algorithm on the SPOT robot for real-time localization and mapping, currently working onmethods to further reduce odometry error while maintaining point cloud density.",
+"Leveraged SPOT-generated point cloud data as a map input for the Unitree GO2 robot and executed autonomouspath planning for task inspection, enabling precise operations and improving coordination in multi-agent systems.",
+"Researching Lidar-based non-SLAM post-processing techniques for high-accuracy 3D reconstruction of environments."],
   },
   {
     title: "Indian Institute of Technology, Madras",
