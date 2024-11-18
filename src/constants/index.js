@@ -206,9 +206,7 @@ const education = [
     location:"Pittsburgh, U.S.A",
     iconBg: "#ffffff",
     date: "August 2024 - Present",
-    points: ["Implemented the FAST-LIO2 algorithm on the SPOT robot for real-time localization and mapping, currently working onmethods to further reduce odometry error while maintaining point cloud density.",
-"Leveraged SPOT-generated point cloud data as a map input for the Unitree GO2 robot and executed autonomouspath planning for task inspection, enabling precise operations and improving coordination in multi-agent systems.",
-"Researching Lidar-based non-SLAM post-processing techniques for high-accuracy 3D reconstruction of environments."],
+    points: Researching task planning and mapping for heterogeneous robot teams to enable efficient multi-agent collaboration in Roboteam, under Prof Kenji Shimada at CERLAB."],
   },
   {
     title: "Indian Institute of Technology, Madras",
