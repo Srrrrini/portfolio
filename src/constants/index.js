@@ -206,7 +206,7 @@ const education = [
     location:"Pittsburgh, U.S.A",
     iconBg: "#ffffff",
     date: "August 2024 - Present",
-    points: Researching task planning and mapping for heterogeneous robot teams to enable efficient multi-agent collaboration in Roboteam, under Prof Kenji Shimada at CERLAB."],
+    points: ["Researching task planning and mapping for heterogeneous robot teams to enable efficient multi-agent collaboration in Roboteam, under Prof Kenji Shimada at CERLAB."],
   },
   {
     title: "Indian Institute of Technology, Madras",
