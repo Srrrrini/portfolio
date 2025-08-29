@@ -144,6 +144,17 @@ const technologies = [
 ];
 
 const experiences = [
+    {
+    title: "Robotics Software Engineer - Intern",
+    company_name: "Nimble Robotics",
+    icon: tesla,
+    location:"San Francisco, CA, U.S.A",
+    iconBg: "#383E56",
+    date: "May 2025 - August 2025",
+    points: [
+      "",
+    ],
+  },
   {
     title: "Product Manager",
     company_name: "ATP STEM Education and Training Services",
