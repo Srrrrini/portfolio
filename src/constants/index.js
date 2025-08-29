@@ -29,7 +29,8 @@ import {
   ml,nhjk,animation,ihs, lanedetection, Flipkart,imageclass,
   apex1,
   mbclogo,
-  CMU
+  CMU,
+  nimble
 } from "../assets";
 
 export const navLinks = [
@@ -147,9 +148,9 @@ const experiences = [
     {
     title: "Robotics Software Engineer - Intern",
     company_name: "Nimble Robotics",
-    icon: tesla,
+    icon: nimble,
     location:"San Francisco, CA, U.S.A",
-    iconBg: "#383E56",
+    iconBg: "#212121",
     date: "May 2025 - August 2025",
     points: [
       "",

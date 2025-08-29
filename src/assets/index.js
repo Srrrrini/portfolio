@@ -33,6 +33,7 @@ import tesla from "./company/tesla.png";
 import ihs from "./company/ihs.jpg";
 import mbclogo from "./company/mbclogo.png";
 import CMU from "./company/CMU.png";
+import nimble from "./company/nimble_robotics_logo.jpeg";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -90,5 +91,6 @@ export {
   apex1,
   Robot,
   mbclogo,
-  CMU
+  CMU,
+  nimble
 };
