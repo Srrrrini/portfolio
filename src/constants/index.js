@@ -153,8 +153,11 @@ const experiences = [
     iconBg: "#212121",
     date: "May 2025 - August 2025",
     points: [
-      "",
-    ],
+    "Migrated a perception model to NVIDIA Triton Inference Server (ONNX), reducing item-picking decision time by 36%.",
+    "Engineered a low-latency Rust pipeline for Triton, deployed to production, saving ~1 hour/day for robots.",
+    "Built an MLOps pipeline for a new pick ranking model using AWS, Label Studio, and LakeFS.",
+    "Developed a pick ranking ML model with 85% top-1 accuracy and ~1ms inference."
+  ],
   },
   {
     title: "Product Manager",
@@ -409,6 +412,15 @@ const life = [
     date: "August 2024 - Present",
     points: ["Researching task planning and mapping for heterogeneous robot teams to enable efficient multi-agent collaboration in Roboteam, under Prof. Kenji Shimada at CERLAB."],
   },
+  {
+  title: "Robotics Software Engineer - Intern",
+  company_name: "Nimble Robotics",
+  icon: nimble,
+  location:"San Francisco, CA, U.S.A",
+  iconBg: "#ffffff",
+  date: "May 2025 - August 2025",
+  points: ["Worked on the vision team to reduce time and increase the accuracy of picking items."],
+},
   {
     title: "Indian Institute of Technology, Madras",
     company_name: "Bachelors of Technology in Mechanical Engineering with Honors",
