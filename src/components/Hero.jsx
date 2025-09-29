@@ -24,13 +24,22 @@ const Hero = () => {
       <p className={`${styles.heroSubText} mt-2 text-white-95`} >
       Welcome to my digital profile. I’m a mechanical engineering student passionate about innovation in Robotics. 
       <br></br>Dive in to explore my journey!
-      
+      <div className='mt-8'>
+        <a
+          href='https://drive.google.com/file/d/1fxkuAHPrEIG_oL93FAPp-IT5iIXVBEi0/view?usp=sharing' // Paste your Google Drive link here
+          target='_blank'
+          rel='noopener noreferrer'
+          className='bg-[#915EFF] hover:bg-violet-700 text-white font-bold py-3 px-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 ease-in-out'
+        >
+          Resume
+        </a>
+      </div>
       </p>
         </div>
         <img
           src={Robot}
           alt="vscode"
-          className="xl:block hidden w-2/3 h-2/3 rounded-2xl opacity-100"
+          className="xl:block hidden w-2/4 h-2/4 rounded-2xl opacity-100"
           />
       </div>
       

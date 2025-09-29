@@ -30,7 +30,8 @@ import {
   apex1,
   mbclogo,
   CMU,
-  nimble
+  nimble,
+  cerlab
 } from "../assets";
 
 export const navLinks = [
@@ -267,7 +268,34 @@ const testimonials = [
 ];
 
 const ResearchExp = [
-  
+  {
+    name: "Roboteam",
+    organization : "CerLab - Carnegie Mellon University",
+    role:"Graduate Research Assistant",
+    guide:"Professor Kenji Shimada",
+    description:
+    "",
+          tags: [
+      {
+        name: "ROS2",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Python",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tensorflow",
+        color: "pink-text-gradient",
+      },
+      
+    ],
+    image: cerlab,
+    source_code_link: "https://github.com/",
+    file_name:"IEEE RAL publication",
+    link:'https://ieeexplore.ieee.org/abstract/document/11159179',
+
+  },
   {
     name: "Cyber Physical System",
     organization : "Dynamics Lab - Indian Institute of Technology Madras",

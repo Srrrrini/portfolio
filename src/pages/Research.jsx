@@ -32,12 +32,12 @@ const ProjectCard = ({
       >
 
         <div className="flex items-start">
-  <div className="h-[380px]"> {/* Set a fixed width for the image container */}
+  <div className="h-[380px] w-[600px]"> {/* Set a fixed width for the image container */}
 
     <img
       src={image}
       alt="project_image"
-      className="w-full h-full object-cover rounded-2xl"
+      className="w-full h-full object-contain rounded-2xl"
       
     />
   </div>

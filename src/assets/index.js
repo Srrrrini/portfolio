@@ -47,9 +47,17 @@ import lanedetection from './lanedetection.gif';
 import Flipkart from './Flipkart.gif';
 import imageclass from './imageclass.gif';
 import apex1 from './apex1.gif';
+import cerlab from './cerlab.png';
+import linkedin from './linkdn.png';
+import gmail from './gmail.jpg';
+import gscholar from './gscholar.png';
 
 export {
+  linkedin,
+  gmail,
+  gscholar,
   logo,
+  cerlab,
   lanedetection,
   shitalLogo,
   backend,
