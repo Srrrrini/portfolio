@@ -338,6 +338,8 @@ const ResearchExp = [
         color: "pink-text-gradient",
       },
     ],
+    file_name:"BTP report",
+    link:'https://drive.google.com/file/d/1jvjlTslbF6n9-OsMecsAaL14arXMzhUP/view?usp=drive_link',
     image: carrent,
     source_code_link: "https://github.com/",
   },
@@ -360,7 +362,7 @@ const ResearchExp = [
     image: jobit,
     source_code_link: "https://github.com/",
     file_name:"UGRP report",
-    link:'https://drive.google.com/file/d/1yXb43sBbAvBl_QKb1vUZB0dzg1Q5VLns/view?usp=sharing',
+    link:'https://drive.google.com/file/d/17DqBenXEmgCC05WnZ_GSqlyjqL9idwy0/view?usp=drive_link',
   },
 ];
 const projects = [
