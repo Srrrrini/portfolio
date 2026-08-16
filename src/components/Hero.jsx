@@ -21,7 +21,7 @@ const Hero = () => {
           </h1>
           
 
-      <p className={`${styles.heroSubText} mt-2 text-white-95`} >
+      <div className={`${styles.heroSubText} mt-2 text-white-95`} >
       Robotics Software Engineer at Nimble Robotics, building toward Physical AI.
       <br></br>Perception, robot learning, and hands-on robotics research.
       <div className='mt-8'>
@@ -34,7 +34,7 @@ const Hero = () => {
           Resume
         </a>
       </div>
-      </p>
+      </div>
         </div>
         <img
           src={Robot}
