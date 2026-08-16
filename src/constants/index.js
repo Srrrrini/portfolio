@@ -177,7 +177,7 @@ const ResearchExp = [
     role:"Undergraduate Research Assistant",
     guide:"Professor Sivasrinivasu Devadula",
     description:
-    "Developed a Cyber-Physical System integrating a Deep Neural Network-based model to mitigate thermal errors in CNC machines. Built an online learning Long Short-Term Memory (LSTM) model, optimized with a Genetic Algorithm using PyTorch, achieving a performance of 2.20 microns RMSE and a 0.95 R² score. Experimented with BiLSTM, AutoRegression, RNN, XGBoost, and SVR models for comparison. Created a thermal data analysis dashboard using React.js and Node.js, integrated with AWS Cloud and CNC machine encoders for real-time data transmission, prediction, and compensation of thermal deviations.",
+    "Thermal errors in CNC machines significantly impact manufacturing precision, leading to costly defects and reduced productivity. This project developed a Cyber-Physical System to mitigate thermal errors through real-time prediction and compensation. As an Undergraduate Research Assistant, I integrated a Deep Neural Network-based model that processes thermal data from CNC machine encoders. I built an online learning Long Short-Term Memory (LSTM) model optimized with a Genetic Algorithm using PyTorch. This approach achieved a performance of 2.20 microns RMSE and a 0.95 R² score. To validate the model's effectiveness, I experimented with alternative architectures including BiLSTM, AutoRegression, RNN, XGBoost, and SVR models for comparison. I created a thermal data analysis dashboard using React.js and Node.js, which integrated with AWS Cloud and CNC machine encoders. This system enables real-time data transmission, prediction, and automatic compensation of thermal deviations, demonstrating improved manufacturing accuracy and reliability.",
           tags: [
       {
         name: "Python",
@@ -202,7 +202,7 @@ const ResearchExp = [
     role:"Bachelor's Thesis Project",
     guide:"Professor Sathyan Subbiah, Professor Sivasrinivasu Devadula",
     description:
-      "Developed a high-precision linear z-axis stage with impressive specifications: 50 mm/s velocity, 1-micron accuracy, and 10 m/s² acceleration, capable of supporting a 20 kg spindle unit. Created detailed GD&T drawings and 3D models, coordinated with manufacturers, and managed procurement for motors and linear scales, ensuring seamless project execution. Conducted kinematic tolerance analysis using 3DCS software to validate design accuracy and reliability, ensuring top-notch performance and precision.",
+      "High-precision manufacturing systems require linear stages that maintain exceptional accuracy under dynamic loading conditions. This thesis project aimed to develop a high-precision linear z-axis stage capable of supporting industrial spindle units while meeting stringent performance requirements. As the primary designer, I developed a stage with specifications of 50 mm/s velocity, 1-micron accuracy, and 10 m/s² acceleration, capable of supporting a 20 kg spindle unit. I created detailed GD&T drawings and 3D models using Fusion 360, which served as the foundation for manufacturing coordination. I coordinated with manufacturers and managed procurement for critical components including motors and linear scales, ensuring seamless project execution. To validate the design, I conducted kinematic tolerance analysis using 3DCS software. This analysis confirmed the design's accuracy and reliability, demonstrating that the stage meets the specified performance requirements for precision manufacturing applications.",
     tags: [
       {
         name: "Fusion 360",
@@ -213,6 +213,8 @@ const ResearchExp = [
         color: "pink-text-gradient",
       },
     ],
+    file_name:"BTP report",
+    link:'https://drive.google.com/file/d/1jvjlTslbF6n9-OsMecsAaL14arXMzhUP/view?usp=drive_link',
     image: carrent,
     source_code_link: "https://github.com/",
   },
@@ -221,7 +223,7 @@ const ResearchExp = [
     organization : "H.T.T.P Lab - Indian Institute of Technology Madras",
     role:"Undergraduate Research Assistant",
     guide:"T.T. Narendran Institute Chair Professor Chakravarthy Balaji",
-    description:"Developed a novel multiple Phase Change Material (PCM)-based heat sink for efficient System on Chip (SoC) thermal management. Conducted multi-objective optimization to achieve low average temperature and non-uniformity. Reduced steady-state time for a 65 W SoC by 1600 seconds and lowered transient temperature difference by 7% compared to traditional air-based heat sinks, enhancing system longevity and reliability. Examined the efficacy of the multiple PCM heat sink under varying heat loads, demonstrating a 10% temperature difference during power surges. The multiple PCM heat sink achieved steady state 150 seconds faster than the air-only configuration.",
+    description:"Modern electronic systems face critical thermal management challenges that limit performance and reliability. This project aimed to develop an efficient cooling solution for System on Chip (SoC) devices using Phase Change Materials (PCM). As an Undergraduate Research Assistant, I developed a novel multiple PCM-based heat sink for efficient SoC thermal management. I conducted multi-objective optimization to achieve low average temperature and reduced thermal non-uniformity. The optimized design reduced steady-state time for a 65 W SoC by 1600 seconds and lowered transient temperature difference by 7% compared to traditional air-based heat sinks. These improvements enhance system longevity and reliability. I examined the efficacy of the multiple PCM heat sink under varying heat loads, demonstrating a 10% reduction in temperature difference during power surges. The multiple PCM heat sink achieved steady state 150 seconds faster than the air-only configuration, validating the design's effectiveness for dynamic thermal management applications.",
     tags: [
       {
         name: "Ansys",
@@ -235,7 +237,7 @@ const ResearchExp = [
     image: jobit,
     source_code_link: "https://github.com/",
     file_name:"UGRP report",
-    link:'https://drive.google.com/file/d/1yXb43sBbAvBl_QKb1vUZB0dzg1Q5VLns/view?usp=sharing',
+    link:'https://drive.google.com/file/d/17DqBenXEmgCC05WnZ_GSqlyjqL9idwy0/view?usp=drive_link',
   },
 ];
 const projects = [

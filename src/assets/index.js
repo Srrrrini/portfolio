@@ -52,9 +52,17 @@ import animation from './video/animation.mp4';
 import lanedetection from './video/lanedetection.mp4';
 import Flipkart from './video/Flipkart.mp4';
 import imageclass from './video/imageclass.mp4';
+import cerlab from './cerlab.png';
+import linkedin from './linkdn.png';
+import gmail from './gmail.jpg';
+import gscholar from './gscholar.png';
 
 export {
+  linkedin,
+  gmail,
+  gscholar,
   logo,
+  cerlab,
   lanedetection,
   shitalLogo,
   backend,
