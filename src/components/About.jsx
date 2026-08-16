@@ -49,10 +49,11 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-3 text-secondary text-[20px] max-w-6xl leading-[30px]"
       >
-I am a graduate student pursuing the Master of Science in Mechanical Engineering - Research program at Carnegie Mellon University. 
+I'm a Robotics Software Engineer at Nimble Robotics in San Francisco, working on perception and ML for warehouse manipulation robots.
 <br></br>
-I recently completed my Bachelor of Technology with Honors in Mechanical Engineering from the Indian Institute of Technology Madras, along with a minor in Artificial Intelligence and Machine Learning.
-        
+I hold a Master of Science in Mechanical Engineering - Research from Carnegie Mellon University (May 2026, GPA 4.0/4.0), and a Bachelor of Technology with Honors in Mechanical Engineering from the Indian Institute of Technology Madras, with a minor in Artificial Intelligence and Machine Learning.
+<br></br>
+Outside of work, I'm building toward Physical AI hands-on: training and evaluating imitation-learning policies (ACT, Diffusion Policy, SmolVLA, Octo) on real robot hardware, and contributing performance fixes upstream to Hugging Face's LeRobot.
         <br></br>
       </motion.p>
       

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import {About, Life} from './'
 import { styles } from "../styles";
-import { Vscode, VscodeEditer,apex1 , Robot} from "../assets";
+import { Robot} from "../assets";
 
 
 const Hero = () => {
@@ -11,20 +11,20 @@ const Hero = () => {
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
         <div className="flex flex-col justify-center items-center mt-5">
-          <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
+          <div className="w-5 h-5 rounded-full bg-[#4f8fe8]" />
           <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className="text-[#915EFF]">Srinivas</span>
+            Hi, I'm <span className="text-[#4f8fe8]">Srinivas</span>
           </h1>
           
 
       <p className={`${styles.heroSubText} mt-2 text-white-95`} >
-      Welcome to my digital profile. I’m a mechanical engineering student passionate about innovation in Robotics. 
-      <br></br>Dive in to explore my journey!
-      
+      Robotics Software Engineer at Nimble Robotics, building toward Physical AI.
+      <br></br>Perception, robot learning, and hands-on robotics research.
+
       </p>
         </div>
         <img

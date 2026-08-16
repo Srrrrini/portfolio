@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 380" width="720" height="380" role="img" aria-label="Real-hardware pick-and-place success rate chart">
+  <rect width="720" height="380" rx="16" fill="#151030"/>
+
+  <text x="32" y="42" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" font-weight="700" fill="#ffffff">Real-hardware pick-and-place success rate</text>
+  <text x="32" y="64" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#aaa6c3">Full evaluation protocol on a physical SO-101 arm &#183; 48&#8211;102 rollouts per model</text>
+
+  <!-- baseline -->
+  <line x1="32" y1="96" x2="32" y2="336" stroke="#383855" stroke-width="1.5"/>
+
+  <!-- Row 1: ACT epoch-matched (best) 69.6% -->
+  <text x="32" y="110" font-family="system-ui, sans-serif" font-size="13" fill="#ffffff" font-weight="600">ACT &#8212; epoch-matched, combined data (best)</text>
+  <rect x="32" y="116" width="477" height="20" rx="4" fill="#56ccf2"/>
+  <text x="519" y="131" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">69.6%</text>
+
+  <!-- Row 2: ACT combined dataset 52.1% -->
+  <text x="32" y="164" font-family="system-ui, sans-serif" font-size="13" fill="#ffffff">ACT &#8212; combined dataset (v2+v3)</text>
+  <rect x="32" y="170" width="357" height="20" rx="4" fill="#56ccf2" opacity="0.85"/>
+  <text x="399" y="185" font-family="system-ui, sans-serif" font-size="14" fill="#c3c2b7">52.1%</text>
+
+  <!-- Row 3: ACT + image aug 47.9% -->
+  <text x="32" y="218" font-family="system-ui, sans-serif" font-size="13" fill="#ffffff">ACT &#8212; + image augmentation</text>
+  <rect x="32" y="224" width="329" height="20" rx="4" fill="#56ccf2" opacity="0.85"/>
+  <text x="371" y="239" font-family="system-ui, sans-serif" font-size="14" fill="#c3c2b7">47.9%</text>
+
+  <!-- Row 4: ACT baseline 33.3% -->
+  <text x="32" y="272" font-family="system-ui, sans-serif" font-size="13" fill="#ffffff">ACT &#8212; baseline</text>
+  <rect x="32" y="278" width="228" height="20" rx="4" fill="#56ccf2" opacity="0.7"/>
+  <text x="270" y="293" font-family="system-ui, sans-serif" font-size="14" fill="#c3c2b7">33.3%</text>
+
+  <!-- Row 5: SmolVLA 29.2% -->
+  <text x="32" y="326" font-family="system-ui, sans-serif" font-size="13" fill="#ffffff">SmolVLA &#8212; alt. VLA architecture</text>
+  <rect x="32" y="332" width="200" height="20" rx="4" fill="#aaa6c3" opacity="0.55"/>
+  <text x="242" y="347" font-family="system-ui, sans-serif" font-size="14" fill="#c3c2b7">29.2%</text>
+
+  <text x="32" y="370" font-family="system-ui, sans-serif" font-size="11" fill="#898781">Also evaluated: Diffusion Policy, VQ-BeT, and a fine-tuned Octo generalist policy &#8212; results and honest negative findings logged per run.</text>
+</svg>

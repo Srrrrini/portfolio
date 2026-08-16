@@ -34,6 +34,12 @@ import ihs from "./company/ihs.jpg";
 import mbclogo from "./company/mbclogo.png";
 import CMU from "./company/CMU.png";
 import nimble from "./company/nimble_robotics_logo.jpeg";
+import wellsfargo from "./company/wellsfargo.svg";
+
+import roboteamFig1 from "./figures/roboteam_fig1.png";
+import cvInspectionStats from "./figures/cv_inspection_stats.svg";
+import so101EvalChart from "./figures/so101_eval_chart.svg";
+import so101SuccessGrid from "./video/so101_success_grid.mp4";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -41,12 +47,11 @@ import tripguide from "./tripguide.png";
 import Robot from "./robot.jpg"
 import Vscode from "./vscode.jpg";
 import VscodeEditer from "./vscodeediter.png";
-import nhjk from './nhjk.gif';
-import animation from './animation.gif';
-import lanedetection from './lanedetection.gif';
-import Flipkart from './Flipkart.gif';
-import imageclass from './imageclass.gif';
-import apex1 from './apex1.gif';
+import nhjk from './video/nhjk.mp4';
+import animation from './video/animation.mp4';
+import lanedetection from './video/lanedetection.mp4';
+import Flipkart from './video/Flipkart.mp4';
+import imageclass from './video/imageclass.mp4';
 
 export {
   logo,
@@ -88,9 +93,13 @@ export {
   nhjk,
   animation,
   ihs,Flipkart,imageclass,
-  apex1,
   Robot,
   mbclogo,
   CMU,
-  nimble
+  nimble,
+  wellsfargo,
+  roboteamFig1,
+  cvInspectionStats,
+  so101EvalChart,
+  so101SuccessGrid
 };

@@ -1,48 +1,26 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
-import {
-  About,
-  Experience,
-  Feedbacks,
-  Hero,
-  Navbar,
-  Tech,
-  Works,
-  StarsCanvas,
-} from "./components";
-
-// PAGES
-
-import Project from "./pages/Projects";
+import { Navbar } from "./components";
 import Homepage from "./pages/Homepage";
-import Research from "./pages/Research";
-import Contacts from "./pages/Contact";
-import Video from "./pages/Video";
-import Work from "./pages/Work";
-import Edu from "./pages/Education";
+
 const App = () => {
   return (
     <BrowserRouter>
-          <div className="relative z-0 bg-primary">
-          
-        {/* <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center"> */}
-    <Navbar/>
-      <Routes>
-          {/* <Route path="/" element={<Navigate to="/dashboard" replace />} /> */}
-        <Route path="/" element={<Homepage/>} />
-        <Route path="/about" element={<Homepage/>} />
-        <Route path="/projects" element={<Project/>} />
-        <Route path="/work" element={<Work/>}/>
-        <Route path="/research" element={<Research/>}/>
-        <Route path="/contact" element={<Contacts/>}/>
-        <Route path="/video" element={<Video/>}/>
-        <Route path="/education" element={<Edu/>}/>
-      </Routes>
-    {/* </div> */}
-    </div>
-  
+      <div className="relative z-0 bg-primary">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          {/* Old multi-page routes now redirect to their anchor on the single page */}
+          <Route path="/about" element={<Navigate to="/#about" replace />} />
+          <Route path="/education" element={<Navigate to="/#work" replace />} />
+          <Route path="/work" element={<Navigate to="/#work" replace />} />
+          <Route path="/research" element={<Navigate to="/#research" replace />} />
+          <Route path="/projects" element={<Navigate to="/#projects" replace />} />
+          <Route path="/contact" element={<Navigate to="/#contact" replace />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </div>
     </BrowserRouter>
-
   );
 };
 
