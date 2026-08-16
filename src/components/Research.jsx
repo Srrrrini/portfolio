@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
@@ -9,15 +10,15 @@ import { fadeIn, textVariant } from "../utils/motion";
 
 const ResearchCard = ({
   index,
+  slug,
   name,
   organization,
+  summary,
   description,
   tags,
   image,
   role,
   guide,
-  file_name,
-  link,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -25,7 +26,7 @@ const ResearchCard = ({
         options={{ max: 5, scale: 1, speed: 300 }}
         className="bg-tertiary p-5 rounded-2xl w-full"
       >
-        <div className="flex flex-col md:flex-row gap-6 items-start">
+        <Link to={`/research/${slug}`} className="flex flex-col md:flex-row gap-6 items-start group">
           <div className="w-full md:w-2/5 h-[240px] shrink-0">
             {typeof image === "string" && image.endsWith(".mp4") ? (
               <video
@@ -46,26 +47,19 @@ const ResearchCard = ({
           </div>
 
           <div className="flex-1">
-            <h3 className="text-white font-display font-bold text-[22px]">{name}</h3>
+            <h3 className="text-white font-display font-bold text-[22px] group-hover:text-accent transition-colors">{name}</h3>
             <p className="text-secondary text-[14px] mt-1">
               {role}{role && organization ? " — " : ""}{organization}
             </p>
             {guide && <p className="text-secondary text-[13px] mt-1">Guide: {guide}</p>}
 
             <p className="mt-3 text-secondary text-[14px] leading-[24px]">
-              {description}
+              {summary || description}
             </p>
 
-            {link && (
-              <a
-                href={link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-3 inline-block text-white font-mono font-semibold text-[13px] hover:text-accent"
-              >
-                {file_name || "Learn more"} &rarr;
-              </a>
-            )}
+            <span className="mt-3 inline-block text-white font-mono font-semibold text-[13px] group-hover:text-accent">
+              View details &rarr;
+            </span>
 
             <div className="mt-4 flex flex-wrap gap-2">
               {tags.map((tag) => (
@@ -75,7 +69,7 @@ const ResearchCard = ({
               ))}
             </div>
           </div>
-        </div>
+        </Link>
       </Tilt>
     </motion.div>
   );

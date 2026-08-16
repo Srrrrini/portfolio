@@ -13,11 +13,10 @@ const Navbar = () => {
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <a
-          href="#top"
+          href="/"
           className="flex items-center gap-2"
           onClick={() => {
             setActive("");
-            window.scrollTo(0, 0);
           }}
         >
           <p className="text-white text-[18px] font-display font-semibold cursor-pointer flex ">
@@ -33,7 +32,7 @@ const Navbar = () => {
               } hover:text-white text-[16px] font-medium cursor-pointer`}
             >
               <a
-                href={`#${link.id}`}
+                href={`/#${link.id}`}
                 onClick={() => {
                   setToggle(false);
                   setActive(link.title);
@@ -68,7 +67,7 @@ const Navbar = () => {
                     setActive(link.title);
                   }}
                 >
-                  <a href={`#${link.id}`}>{link.title}</a>
+                  <a href={`/#${link.id}`}>{link.title}</a>
                 </li>
               ))}
             </ul>

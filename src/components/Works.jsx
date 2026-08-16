@@ -1,17 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({
   index,
+  slug,
   name,
   organization,
+  summary,
   description,
   tags,
   image,
@@ -26,7 +28,7 @@ const ProjectCard = ({
         className="bg-tertiary p-5 rounded-2xl w-full"
       >
         <div className="flex flex-col md:flex-row gap-6 items-start">
-          <div className="w-full md:w-2/5 h-[240px] shrink-0">
+          <Link to={`/projects/${slug}`} className="w-full md:w-2/5 h-[240px] shrink-0 block">
             {typeof image === "string" && image.endsWith(".mp4") ? (
               <video
                 src={image}
@@ -43,16 +45,21 @@ const ProjectCard = ({
                 className="w-full h-full object-cover rounded-xl"
               />
             )}
-          </div>
+          </Link>
 
           <div className="flex-1">
-            <h3 className="text-white font-display font-bold text-[24px]">{name}</h3>
-            {organization && (
-              <p className="text-secondary text-[14px] mt-1">{organization}</p>
-            )}
-            <p className="mt-3 text-secondary text-[14px] leading-[24px]">
-              {description}
-            </p>
+            <Link to={`/projects/${slug}`} className="group">
+              <h3 className="text-white font-display font-bold text-[24px] group-hover:text-accent transition-colors">{name}</h3>
+              {organization && (
+                <p className="text-secondary text-[14px] mt-1">{organization}</p>
+              )}
+              <p className="mt-3 text-secondary text-[14px] leading-[24px]">
+                {summary || description}
+              </p>
+              <span className="mt-3 inline-block text-white font-mono font-semibold text-[13px] group-hover:text-accent">
+                View details &rarr;
+              </span>
+            </Link>
 
             <div className="mt-4 flex flex-wrap gap-x-4 gap-y-1 font-mono text-[13px]">
               {source_code_link && (

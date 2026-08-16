@@ -37,6 +37,7 @@ import nimble from "./company/nimble_robotics_logo.jpeg";
 import wellsfargo from "./company/wellsfargo.svg";
 
 import roboteamFig1 from "./figures/roboteam_fig1.png";
+import roboteamStats from "./figures/roboteam_stats.svg";
 import cvInspectionStats from "./figures/cv_inspection_stats.svg";
 import so101EvalChart from "./figures/so101_eval_chart.svg";
 import so101SuccessGrid from "./video/so101_success_grid.mp4";
@@ -105,6 +106,7 @@ export {
   nimble,
   wellsfargo,
   roboteamFig1,
+  roboteamStats,
   cvInspectionStats,
   so101EvalChart,
   so101SuccessGrid

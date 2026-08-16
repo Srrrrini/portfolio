@@ -32,6 +32,7 @@ import {
   nimble,
   wellsfargo,
   roboteamFig1,
+  roboteamStats,
   cvInspectionStats,
   so101EvalChart,
   so101SuccessGrid
@@ -146,12 +147,29 @@ const technologies = [
 
 const ResearchExp = [
   {
+    slug: "roboteam",
     name: "Semantic Exploration & Dense Mapping for Heterogeneous Robot Teams",
     organization : "Roboteam, CERLAB - Carnegie Mellon University",
     role:"Graduate Researcher",
     guide:"Professor Kenji Shimada",
+    summary: "Semantic mapping system for heterogeneous robot teams on a Boston Dynamics Spot — 87.19% object map completeness, published in IEEE RA-L.",
     description:
     "Developed a semantic mapping system for heterogeneous robot teams (UGV, UAV) operating collaboratively in dynamic industrial environments. Implemented a perception pipeline on a Boston Dynamics Spot using a sensor suite (Ouster OS-1-128 LiDAR and panoramic camera payload) combined with YOLOv7 for object detection and SAM2 for segmentation, and integrated a SlideSLAM system on Spot using RGBD and LiDAR data for real-time semantic segmentation. Validated the system in a mock construction environment, achieving 87.19% object map completeness (3.11 cm avg. error) and 99.19% background map completeness (2.27 cm avg. error). Co-authored the resulting paper, published in IEEE Robotics and Automation Letters (RA-L), 2025.",
+    sections: [
+      {
+        heading: "The system",
+        body: "Built a semantic mapping system for heterogeneous robot teams (UGV, UAV) operating collaboratively in dynamic industrial environments, enabling real-time multi-agent coordination and distributed perception fusion. Implemented the perception pipeline on a Boston Dynamics Spot using a sensor suite of an Ouster OS-1-128 LiDAR and panoramic camera payload, combining YOLOv7 for object detection with SAM2 for segmentation. Integrated a SlideSLAM system on Spot using RGBD and LiDAR data for real-time semantic segmentation.",
+      },
+      {
+        heading: "Results",
+        body: "Validated the system in a mock construction environment: 87.19% object map completeness (3.11 cm avg. error) and 99.19% background map completeness (2.27 cm avg. error).",
+        image: roboteamStats,
+      },
+      {
+        heading: "Publication",
+        body: "Co-authored the resulting paper with Xiaoyang Zhan, Shixin Zhou, Qianqian Yang, Yixuan Zhao, Hao Liu, and Prof. Kenji Shimada, published in IEEE Robotics and Automation Letters (RA-L), 2025.",
+      },
+    ],
     tags: [
       {
         name: "ROS2",
@@ -172,10 +190,12 @@ const ResearchExp = [
     link:"https://arxiv.org/abs/2505.22880",
   },
   {
+    slug: "cyber-physical-system",
     name: "Cyber Physical System",
     organization : "Dynamics Lab - Indian Institute of Technology Madras",
     role:"Undergraduate Research Assistant",
     guide:"Professor Sivasrinivasu Devadula",
+    summary: "Online-learning LSTM model to predict and compensate CNC thermal errors in real time — 2.20 microns RMSE, 0.95 R² score.",
     description:
     "Thermal errors in CNC machines significantly impact manufacturing precision, leading to costly defects and reduced productivity. This project developed a Cyber-Physical System to mitigate thermal errors through real-time prediction and compensation. As an Undergraduate Research Assistant, I integrated a Deep Neural Network-based model that processes thermal data from CNC machine encoders. I built an online learning Long Short-Term Memory (LSTM) model optimized with a Genetic Algorithm using PyTorch. This approach achieved a performance of 2.20 microns RMSE and a 0.95 R² score. To validate the model's effectiveness, I experimented with alternative architectures including BiLSTM, AutoRegression, RNN, XGBoost, and SVR models for comparison. I created a thermal data analysis dashboard using React.js and Node.js, which integrated with AWS Cloud and CNC machine encoders. This system enables real-time data transmission, prediction, and automatic compensation of thermal deviations, demonstrating improved manufacturing accuracy and reliability.",
           tags: [
@@ -191,16 +211,18 @@ const ResearchExp = [
         name: "tensorflow",
         color: "pink-text-gradient",
       },
-      
+
     ],
     image: animation,
     source_code_link: "https://github.com/",
   },
   {
+    slug: "z-axis-stage",
     name: "High-Precision Linear Z-Axis Stage Development",
     organization : "Indian Institute of Technology Madras",
     role:"Bachelor's Thesis Project",
     guide:"Professor Sathyan Subbiah, Professor Sivasrinivasu Devadula",
+    summary: "Designed a high-precision linear z-axis stage — 50 mm/s velocity, 1-micron accuracy, supporting a 20 kg spindle unit.",
     description:
       "High-precision manufacturing systems require linear stages that maintain exceptional accuracy under dynamic loading conditions. This thesis project aimed to develop a high-precision linear z-axis stage capable of supporting industrial spindle units while meeting stringent performance requirements. As the primary designer, I developed a stage with specifications of 50 mm/s velocity, 1-micron accuracy, and 10 m/s² acceleration, capable of supporting a 20 kg spindle unit. I created detailed GD&T drawings and 3D models using Fusion 360, which served as the foundation for manufacturing coordination. I coordinated with manufacturers and managed procurement for critical components including motors and linear scales, ensuring seamless project execution. To validate the design, I conducted kinematic tolerance analysis using 3DCS software. This analysis confirmed the design's accuracy and reliability, demonstrating that the stage meets the specified performance requirements for precision manufacturing applications.",
     tags: [
@@ -219,10 +241,12 @@ const ResearchExp = [
     source_code_link: "https://github.com/",
   },
   {
+    slug: "soc-cooling",
     name: "System on a Chip cooling",
     organization : "H.T.T.P Lab - Indian Institute of Technology Madras",
     role:"Undergraduate Research Assistant",
     guide:"T.T. Narendran Institute Chair Professor Chakravarthy Balaji",
+    summary: "Multiple Phase Change Material heat sink for SoC thermal management — 1600s faster steady-state, 7% lower transient temperature difference.",
     description:"Modern electronic systems face critical thermal management challenges that limit performance and reliability. This project aimed to develop an efficient cooling solution for System on Chip (SoC) devices using Phase Change Materials (PCM). As an Undergraduate Research Assistant, I developed a novel multiple PCM-based heat sink for efficient SoC thermal management. I conducted multi-objective optimization to achieve low average temperature and reduced thermal non-uniformity. The optimized design reduced steady-state time for a 65 W SoC by 1600 seconds and lowered transient temperature difference by 7% compared to traditional air-based heat sinks. These improvements enhance system longevity and reliability. I examined the efficacy of the multiple PCM heat sink under varying heat loads, demonstrating a 10% reduction in temperature difference during power surges. The multiple PCM heat sink achieved steady state 150 seconds faster than the air-only configuration, validating the design's effectiveness for dynamic thermal management applications.",
     tags: [
       {
@@ -242,11 +266,28 @@ const ResearchExp = [
 ];
 const projects = [
   {
+    slug: "so101-lerobot",
     name: "Robot Learning on a Real Arm (SO-101 / LeRobot)",
     image : so101SuccessGrid,
     organization:"Personal project, built on Hugging Face's LeRobot",
+    summary: "Imitation-learning policies on a real 6-DOF arm — 33.3% to 69.6% success rate, plus a memory-efficiency fix upstreamed to LeRobot.",
     description:
       "Trained and evaluated imitation-learning policies (ACT, Diffusion Policy, a fine-tuned Octo vision-language-conditioned generalist policy, SmolVLA — a vision-language-action model — and a novel VQ-BeT baseline) on a real 6-DOF robot arm doing pick-and-place. Built a rigorous evaluation protocol across 48-102 real-hardware rollouts per model; iterating on data and training strategy took the best model from a 33.3% to a 69.6% success rate (grid above: 6 real successful rollouts across left/middle/right regions, including a correctly-ignored distractor object). Found and GPU-verified a real memory-efficiency bug in LeRobot's training code, filed upstream — independently confirmed when another contributor found and merged the same fix first.",
+    sections: [
+      {
+        heading: "What I built",
+        body: "Trained and evaluated imitation-learning policies — ACT, Diffusion Policy, a fine-tuned Octo vision-language-conditioned generalist policy, SmolVLA (a vision-language-action model), and a novel VQ-BeT baseline — on a real 6-DOF robot arm doing pick-and-place. Built a rigorous evaluation protocol across 48-102 real-hardware rollouts per model, covering baseline, distractor, lighting, background, and generalization test conditions.",
+      },
+      {
+        heading: "Results",
+        body: "Iterating on data and training strategy (image augmentation, combined datasets, epoch-matched training) took the best model from a 33.3% to a 69.6% success rate. The grid above shows 6 real successful rollouts across left/middle/right regions, including one where a distractor object was correctly ignored.",
+        image: so101EvalChart,
+      },
+      {
+        heading: "Open-source contribution",
+        body: "Found and GPU-verified a real memory-efficiency bug in LeRobot's training code and filed a fix upstream — independently confirmed when another contributor found and merged the same fix first, validating the finding was correct and worth doing.",
+      },
+    ],
     tags: [
       {
         name: "PyTorch",
@@ -266,9 +307,11 @@ const projects = [
     source_code_link: 'https://github.com/huggingface/lerobot/pull/4339',
   },
   {
+    slug: "central-navigation-system",
     name: "Central Navigation System",
     image : Flipkart,
     organization:"GRID 3.0 FLIPKART Robotics Challenge",
+    summary: "Aruco-code-based bot localization and pathing to reach an endpoint autonomously.",
     description:
       "Determine the bot’s current location by identifying aruco codes pasted on the bot using open cv and devised algorithm that sends instructions to the bot based on live location to quickly reach the endpoint.",
     tags: [
@@ -282,9 +325,11 @@ const projects = [
     source_code_link: 'https://github.com/Srrrrini/Central-Navigation-System-GRID-3.0-',
   },
   {
+    slug: "car-washing-bot",
     name: "Autonomous Car washing bot",
     image : nhjk,
     organization:"IBOT Robotics competition(First Position)",
+    summary: "Stain detection algorithm for an autonomous car-washing robot — 1st place.",
     description:
       "Devised a Stain detection algorithm using OpenCV",
     tags: [
@@ -298,9 +343,11 @@ const projects = [
     source_code_link: 'https://github.com/Srrrrini/carwash-ibot',
   },
   {
+    slug: "image-classification",
     name: "Image Classification",
     image : imageclass,
     organization:"Computer Vision and Intelligence Club - IITM",
+    summary: "Custom CNN + MobileNetV3 transfer learning for image classification — 91.23% accuracy.",
     description:
       "Designed and trained a custom Convolutional Neural Network (CNN) in Keras for image classification, achieving an 84% accuracy rate on a dataset of over 14,000 labeled images.  Leveraged transfer learning from MobileNetV3 to develop an image classification model, attaining a remarkable 91.23% accuracy. ",
     tags: [
@@ -314,9 +361,11 @@ const projects = [
     source_code_link: 'https://github.com/Srrrrini/Self-Projects/blob/main/IMAGE_classification.ipynb',
   },
   {
+    slug: "lane-detection",
     name: "Lane detection",
     image : lanedetection,
     organization:"Computer Vision and Intelligence Club - IITM",
+    summary: "Lane detection algorithm for autonomous driving using OpenCV.",
     description:
       "Devised a Lane detection algorithm using OpenCV",
     tags: [
