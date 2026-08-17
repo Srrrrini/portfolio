@@ -15,9 +15,9 @@ const Homepage = () => {
       <Hero />
       <About />
       <Life />
-      <Tech />
       <Research />
       <Works />
+      <Tech />
 
       <div className="relative z-0">
         <Contact />

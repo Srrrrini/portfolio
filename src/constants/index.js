@@ -15,7 +15,9 @@ import {
   roboteamStats,
   roboteamFig2,
   so101EvalChart,
-  so101SuccessGrid
+  so101SuccessGrid,
+  linkedin,
+  gscholar
 } from "../assets";
 
 export const navLinks = [
@@ -28,10 +30,6 @@ export const navLinks = [
     title: "Experience",
   },
   {
-    id: "skills",
-    title: "Skills",
-  },
-  {
     id:"research",
     title:"Research"
   },
@@ -40,9 +38,26 @@ export const navLinks = [
     title:"Projects"
   },
   {
+    id: "skills",
+    title: "Skills",
+  },
+  {
     id: "contact",
     title: "Contact",
   }
+];
+
+export const social = [
+  {
+    name: "LinkedIn",
+    icon: linkedin,
+    link: "https://www.linkedin.com/in/srinivas-c-ramineni/",
+  },
+  {
+    name: "Google Scholar",
+    icon: gscholar,
+    link: "https://scholar.google.com/citations?user=dRa4Wd4AAAAJ&hl=en",
+  },
 ];
 
 const services = [
