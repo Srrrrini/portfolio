@@ -63,17 +63,17 @@ const ProjectCard = ({
 
             <div className="mt-4 flex flex-wrap gap-x-2 gap-y-1 font-mono text-[13px]">
               {source_code_link && (
-                <a href={source_code_link} target="_blank" rel="noopener noreferrer" className="inline-block text-white font-semibold hover:text-accent px-2 py-2 -mx-2 -my-2">
+                <a href={source_code_link} rel="noopener noreferrer" className="inline-block text-white font-semibold hover:text-accent px-2 py-2 -mx-2 -my-2">
                   CODE
                 </a>
               )}
               {report && (
-                <a href={report} target="_blank" rel="noopener noreferrer" className="inline-block text-white font-semibold hover:text-accent px-2 py-2 -mx-2 -my-2">
+                <a href={report} rel="noopener noreferrer" className="inline-block text-white font-semibold hover:text-accent px-2 py-2 -mx-2 -my-2">
                   REPORT
                 </a>
               )}
               {video && (
-                <a href={video} target="_blank" rel="noopener noreferrer" className="inline-block text-white font-semibold hover:text-accent px-2 py-2 -mx-2 -my-2">
+                <a href={video} rel="noopener noreferrer" className="inline-block text-white font-semibold hover:text-accent px-2 py-2 -mx-2 -my-2">
                   VIDEO
                 </a>
               )}

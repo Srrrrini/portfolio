@@ -28,7 +28,7 @@ const Hero = () => {
         <div className='mt-8'>
           <a
             href='https://drive.google.com/file/d/1fxkuAHPrEIG_oL93FAPp-IT5iIXVBEi0/view?usp=sharing'
-            target='_blank'
+           
             rel='noopener noreferrer'
             className='bg-[#4f8fe8] hover:bg-[#3a78d4] text-white font-mono font-semibold text-[16px] py-3 px-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 ease-in-out'
           >

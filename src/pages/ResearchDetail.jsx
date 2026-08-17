@@ -72,7 +72,7 @@ const ResearchDetail = () => {
       {link && (
         <a
           href={link}
-          target="_blank"
+         
           rel="noopener noreferrer"
           className="mt-4 inline-block text-white font-mono font-semibold text-[14px] bg-tertiary border border-white/10 hover:border-accent hover:text-accent rounded-xl px-5 py-3 transition-colors"
         >
