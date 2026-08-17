@@ -73,7 +73,7 @@ const Life = () => {
       {/* </motion.div> */}
 
       <div className="mt-20 flex flex-col">
-        <VerticalTimeline>
+        <VerticalTimeline animate={false}>
           {life.map((experience, index) => (
             <ExperienceCard
               key={`experience-${index}`}
