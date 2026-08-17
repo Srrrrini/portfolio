@@ -6,9 +6,9 @@ import { Robot} from "../assets";
 
 const Hero = () => {
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
+    <section className={`relative w-full min-h-screen mx-auto`}>
       <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+        className={`pt-[120px] pb-20 max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5 flex-wrap sm:flex-nowrap`}
       >
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#4f8fe8]" />
