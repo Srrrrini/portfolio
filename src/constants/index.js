@@ -288,6 +288,8 @@ const projects = [
       {
         heading: "Open-source contribution",
         body: "Found and GPU-verified a memory-efficiency bug in LeRobot's training code, filed upstream — independently confirmed when another contributor merged the same fix first.",
+        link: "https://github.com/huggingface/lerobot/pull/4339",
+        linkLabel: "View the PR",
       },
     ],
     tags: [
@@ -306,7 +308,7 @@ const projects = [
     ],
     video:'/media/so101_occlusion_fix.mp4',
     report:'',
-    source_code_link: 'https://github.com/huggingface/lerobot/pull/4339',
+    source_code_link: 'https://github.com/huggingface/lerobot',
   },
   {
     slug: "central-navigation-system",

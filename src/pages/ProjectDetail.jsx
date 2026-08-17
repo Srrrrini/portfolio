@@ -83,6 +83,14 @@ const ProjectDetail = () => {
             <motion.div key={section.heading} variants={fadeIn("up", "spring", i * 0.2, 0.75)}>
               <h2 className="text-white font-display font-bold text-[24px]">{section.heading}</h2>
               <p className="mt-3 text-secondary text-[16px] leading-[28px]">{section.body}</p>
+              {section.link && (
+                <a
+                  href={section.link}
+                  className="mt-3 inline-block text-white font-mono font-semibold text-[13px] hover:text-accent"
+                >
+                  {section.linkLabel || "Learn more"} &rarr;
+                </a>
+              )}
               {section.image && (
                 <img
                   src={section.image}
