@@ -37,9 +37,18 @@ const ResearchDetail = () => {
 
       <motion.div variants={textVariant()} initial="hidden" animate="show" className="mt-6">
         {badge && (
-          <span className="inline-block mb-3 text-[13px] font-mono font-semibold text-accent border border-accent/40 rounded-full px-3 py-1">
-            {badge}
-          </span>
+          link ? (
+            <a
+              href={link}
+              className="inline-block mb-3 text-[13px] font-mono font-semibold text-accent border border-accent/40 rounded-full px-3 py-1 hover:bg-accent/10"
+            >
+              {badge} &rarr;
+            </a>
+          ) : (
+            <span className="inline-block mb-3 text-[13px] font-mono font-semibold text-accent border border-accent/40 rounded-full px-3 py-1">
+              {badge}
+            </span>
+          )
         )}
         <h1 className={`${styles.sectionHeadText} text-[36px] md:text-[48px]`}>{name}</h1>
         <p className="text-secondary text-[16px] mt-2">

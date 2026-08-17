@@ -20,6 +20,7 @@ const ResearchCard = ({
   role,
   guide,
   badge,
+  link,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -27,6 +28,20 @@ const ResearchCard = ({
         options={{ max: 5, scale: 1, speed: 300 }}
         className="bg-tertiary border border-white/10 p-5 rounded-2xl w-full"
       >
+        {badge && (
+          link ? (
+            <a
+              href={link}
+              className="inline-block mb-2 text-[12px] font-mono font-semibold text-accent border border-accent/40 rounded-full px-3 py-1 hover:bg-accent/10"
+            >
+              {badge} &rarr;
+            </a>
+          ) : (
+            <span className="inline-block mb-2 text-[12px] font-mono font-semibold text-accent border border-accent/40 rounded-full px-3 py-1">
+              {badge}
+            </span>
+          )
+        )}
         <Link to={`/research/${slug}`} className="flex flex-col md:flex-row gap-6 items-start group">
           <div className="w-full md:w-2/5 h-[240px] shrink-0">
             {typeof image === "string" && image.endsWith(".mp4") ? (
@@ -48,11 +63,6 @@ const ResearchCard = ({
           </div>
 
           <div className="flex-1">
-            {badge && (
-              <span className="inline-block mb-2 text-[12px] font-mono font-semibold text-accent border border-accent/40 rounded-full px-3 py-1">
-                {badge}
-              </span>
-            )}
             <h3 className="text-white font-display font-bold text-[22px] group-hover:text-accent transition-colors">{name}</h3>
             <p className="text-secondary text-[14px] mt-1">
               {role}{role && organization ? " — " : ""}{organization}
