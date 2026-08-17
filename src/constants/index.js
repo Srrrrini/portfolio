@@ -188,8 +188,8 @@ const ResearchExp = [
     ],
     image: roboteamFig1,
     source_code_link: "",
-    file_name:"View paper (arXiv:2505.22880)",
-    link:"https://arxiv.org/abs/2505.22880",
+    file_name:"View paper (IEEE RA-L)",
+    link:"https://ieeexplore.ieee.org/abstract/document/11159179",
   },
   {
     slug: "cyber-physical-system",
