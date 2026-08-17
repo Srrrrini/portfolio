@@ -24,7 +24,7 @@ const ResearchCard = ({
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
         options={{ max: 5, scale: 1, speed: 300 }}
-        className="bg-tertiary p-5 rounded-2xl w-full"
+        className="bg-tertiary border border-white/10 p-5 rounded-2xl w-full"
       >
         <Link to={`/research/${slug}`} className="flex flex-col md:flex-row gap-6 items-start group">
           <div className="w-full md:w-2/5 h-[240px] shrink-0">
