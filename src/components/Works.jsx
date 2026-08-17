@@ -36,13 +36,13 @@ const ProjectCard = ({
                 loop
                 muted
                 playsInline
-                className="w-full h-full object-cover rounded-xl"
+                className="w-full h-full object-contain rounded-xl"
               />
             ) : (
               <img
                 src={image}
                 alt={`${name} thumbnail`}
-                className="w-full h-full object-cover rounded-xl"
+                className="w-full h-full object-contain rounded-xl"
               />
             )}
           </Link>

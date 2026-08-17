@@ -35,13 +35,13 @@ const ResearchCard = ({
                 loop
                 muted
                 playsInline
-                className="w-full h-full object-cover rounded-xl"
+                className="w-full h-full object-contain rounded-xl"
               />
             ) : (
               <img
                 src={image}
                 alt={`${name} figure`}
-                className="w-full h-full object-cover rounded-xl"
+                className="w-full h-full object-contain rounded-xl"
               />
             )}
           </div>
