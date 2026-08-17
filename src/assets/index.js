@@ -38,6 +38,7 @@ import wellsfargo from "./company/wellsfargo.svg";
 
 import roboteamFig1 from "./figures/roboteam_fig1.png";
 import roboteamStats from "./figures/roboteam_stats.svg";
+import roboteamFig2 from "./figures/roboteam_fig2.jpg";
 import so101EvalChart from "./figures/so101_eval_chart.svg";
 import so101SuccessGrid from "./video/so101_success_grid.mp4";
 
@@ -106,6 +107,7 @@ export {
   wellsfargo,
   roboteamFig1,
   roboteamStats,
+  roboteamFig2,
   so101EvalChart,
   so101SuccessGrid
 };

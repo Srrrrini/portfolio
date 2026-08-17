@@ -33,6 +33,7 @@ import {
   wellsfargo,
   roboteamFig1,
   roboteamStats,
+  roboteamFig2,
   so101EvalChart,
   so101SuccessGrid
 } from "../assets";
@@ -158,16 +159,17 @@ const ResearchExp = [
     sections: [
       {
         heading: "The system",
-        body: "Built a semantic mapping system for heterogeneous robot teams (UGV, UAV) operating collaboratively in dynamic industrial environments, enabling real-time multi-agent coordination and distributed perception fusion. Implemented the perception pipeline on a Boston Dynamics Spot using a sensor suite of an Ouster OS-1-128 LiDAR and panoramic camera payload, combining YOLOv7 for object detection with SAM2 for segmentation. Integrated a SlideSLAM system on Spot using RGBD and LiDAR data for real-time semantic segmentation.",
+        body: "Perception pipeline on a Boston Dynamics Spot: Ouster OS-1-128 LiDAR + panoramic camera, YOLOv7 for detection, SAM2 for segmentation, SlideSLAM for real-time semantic mapping.",
       },
       {
         heading: "Results",
-        body: "Validated the system in a mock construction environment: 87.19% object map completeness (3.11 cm avg. error) and 99.19% background map completeness (2.27 cm avg. error).",
+        body: "Validated in a mock construction environment.",
         image: roboteamStats,
       },
       {
-        heading: "Publication",
-        body: "Co-authored the resulting paper with Xiaoyang Zhan, Shixin Zhou, Qianqian Yang, Yixuan Zhao, Hao Liu, and Prof. Kenji Shimada, published in IEEE Robotics and Automation Letters (RA-L), 2025.",
+        heading: "In the field",
+        body: "Exploration path, detected objects, and reconstructed point clouds from the same run.",
+        image: roboteamFig2,
       },
     ],
     tags: [
@@ -276,16 +278,16 @@ const projects = [
     sections: [
       {
         heading: "What I built",
-        body: "Trained and evaluated imitation-learning policies — ACT, Diffusion Policy, a fine-tuned Octo vision-language-conditioned generalist policy, SmolVLA (a vision-language-action model), and a novel VQ-BeT baseline — on a real 6-DOF robot arm doing pick-and-place. Built a rigorous evaluation protocol across 48-102 real-hardware rollouts per model, covering baseline, distractor, lighting, background, and generalization test conditions.",
+        body: "Five imitation-learning policies (ACT, Diffusion Policy, Octo, SmolVLA, VQ-BeT) on a real 6-DOF arm doing pick-and-place, evaluated across 48-102 real-hardware rollouts per model.",
       },
       {
         heading: "Results",
-        body: "Iterating on data and training strategy (image augmentation, combined datasets, epoch-matched training) took the best model from a 33.3% to a 69.6% success rate. The grid above shows 6 real successful rollouts across left/middle/right regions, including one where a distractor object was correctly ignored.",
+        body: "Iterating on data and training strategy took the best model from 33.3% to 69.6% success.",
         image: so101EvalChart,
       },
       {
         heading: "Open-source contribution",
-        body: "Found and GPU-verified a real memory-efficiency bug in LeRobot's training code and filed a fix upstream — independently confirmed when another contributor found and merged the same fix first, validating the finding was correct and worth doing.",
+        body: "Found and GPU-verified a memory-efficiency bug in LeRobot's training code, filed upstream — independently confirmed when another contributor merged the same fix first.",
       },
     ],
     tags: [
