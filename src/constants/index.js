@@ -199,7 +199,7 @@ const ResearchExp = [
     guide:"Professor Sivasrinivasu Devadula",
     summary: "Online-learning LSTM model to predict and compensate CNC thermal errors in real time — 2.20 microns RMSE, 0.95 R² score.",
     description:
-    "Thermal errors in CNC machines significantly impact manufacturing precision, leading to costly defects and reduced productivity. This project developed a Cyber-Physical System to mitigate thermal errors through real-time prediction and compensation. As an Undergraduate Research Assistant, I integrated a Deep Neural Network-based model that processes thermal data from CNC machine encoders. I built an online learning Long Short-Term Memory (LSTM) model optimized with a Genetic Algorithm using PyTorch. This approach achieved a performance of 2.20 microns RMSE and a 0.95 R² score. To validate the model's effectiveness, I experimented with alternative architectures including BiLSTM, AutoRegression, RNN, XGBoost, and SVR models for comparison. I created a thermal data analysis dashboard using React.js and Node.js, which integrated with AWS Cloud and CNC machine encoders. This system enables real-time data transmission, prediction, and automatic compensation of thermal deviations, demonstrating improved manufacturing accuracy and reliability.",
+    "Built an online-learning LSTM model (optimized with a genetic algorithm, PyTorch) to predict and compensate thermal errors in CNC machines in real time, benchmarked against BiLSTM, AutoRegression, RNN, XGBoost, and SVR. Shipped a React/Node.js dashboard on AWS for real-time thermal data, prediction, and compensation.",
           tags: [
       {
         name: "Python",
@@ -226,7 +226,7 @@ const ResearchExp = [
     guide:"Professor Sathyan Subbiah, Professor Sivasrinivasu Devadula",
     summary: "Designed a high-precision linear z-axis stage — 50 mm/s velocity, 1-micron accuracy, supporting a 20 kg spindle unit.",
     description:
-      "High-precision manufacturing systems require linear stages that maintain exceptional accuracy under dynamic loading conditions. This thesis project aimed to develop a high-precision linear z-axis stage capable of supporting industrial spindle units while meeting stringent performance requirements. As the primary designer, I developed a stage with specifications of 50 mm/s velocity, 1-micron accuracy, and 10 m/s² acceleration, capable of supporting a 20 kg spindle unit. I created detailed GD&T drawings and 3D models using Fusion 360, which served as the foundation for manufacturing coordination. I coordinated with manufacturers and managed procurement for critical components including motors and linear scales, ensuring seamless project execution. To validate the design, I conducted kinematic tolerance analysis using 3DCS software. This analysis confirmed the design's accuracy and reliability, demonstrating that the stage meets the specified performance requirements for precision manufacturing applications.",
+      "Designed a linear z-axis stage (50 mm/s velocity, 1-micron accuracy, 10 m/s² acceleration) supporting a 20 kg spindle unit, with full GD&T drawings and 3D models in Fusion 360. Coordinated manufacturing and procurement, and validated the design with kinematic tolerance analysis in 3DCS.",
     tags: [
       {
         name: "Fusion 360",
@@ -249,7 +249,7 @@ const ResearchExp = [
     role:"Undergraduate Research Assistant",
     guide:"T.T. Narendran Institute Chair Professor Chakravarthy Balaji",
     summary: "Multiple Phase Change Material heat sink for SoC thermal management — 1600s faster steady-state, 7% lower transient temperature difference.",
-    description:"Modern electronic systems face critical thermal management challenges that limit performance and reliability. This project aimed to develop an efficient cooling solution for System on Chip (SoC) devices using Phase Change Materials (PCM). As an Undergraduate Research Assistant, I developed a novel multiple PCM-based heat sink for efficient SoC thermal management. I conducted multi-objective optimization to achieve low average temperature and reduced thermal non-uniformity. The optimized design reduced steady-state time for a 65 W SoC by 1600 seconds and lowered transient temperature difference by 7% compared to traditional air-based heat sinks. These improvements enhance system longevity and reliability. I examined the efficacy of the multiple PCM heat sink under varying heat loads, demonstrating a 10% reduction in temperature difference during power surges. The multiple PCM heat sink achieved steady state 150 seconds faster than the air-only configuration, validating the design's effectiveness for dynamic thermal management applications.",
+    description:"Developed a multiple phase-change-material heat sink for SoC thermal management, multi-objective-optimized for low average temperature and non-uniformity. Reduced steady-state time by 1600s and transient temperature difference by 7% vs. air-based heat sinks, with a 10% improvement under power-surge heat loads.",
     tags: [
       {
         name: "Ansys",
