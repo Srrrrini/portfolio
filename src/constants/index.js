@@ -3,30 +3,10 @@ import {
   backend,
   creator,
   web,
-  javascript,
-  typescript,
-  html,
-  css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
   shopify,
   carrent,
   jobit,
-  tripguide,
-  threejs,
-  python,
-  java,
-  nextjs,
-  ml,nhjk,animation,ihs, lanedetection, Flipkart,imageclass,
+  nhjk,animation,ihs, lanedetection, Flipkart,imageclass,
   mbclogo,
   CMU,
   nimble,
@@ -46,6 +26,10 @@ export const navLinks = [
   {
     id: "work",
     title: "Experience",
+  },
+  {
+    id: "skills",
+    title: "Skills",
   },
   {
     id:"research",
@@ -82,66 +66,16 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
+    category: "Programming & Development",
+    skills: ["Python", "Rust", "C++", "NumPy", "Pandas", "OpenCV", "PCL", "Git", "Linux", "Docker"],
   },
   {
-    name: "CSS 3",
-    icon: css,
+    category: "Machine Learning & Cloud",
+    skills: ["PyTorch", "Scikit-learn", "ONNX", "TensorRT", "NVIDIA Triton", "AWS (S3, EC2)", "LakeFS"],
   },
   {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "Python",
-    icon: python,
-  },
-  {
-    name: "java",
-    icon: java,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "machineLearning",
-    icon: ml,
+    category: "Robotics & Systems",
+    skills: ["ROS / ROS2", "SLAM", "Ouster LiDAR", "NVIDIA Isaac Sim", "CUDA", "MATLAB", "MoveIt"],
   },
 ];
 
@@ -426,6 +360,8 @@ const life = [
       "Relevant coursework: Robot Localization and Mapping, Computer Vision, Modern Control for Robotics.",
       "Researched task planning and semantic mapping for heterogeneous robot teams in Roboteam, under Prof. Kenji Shimada at CERLAB — co-authored a resulting IEEE RA-L publication."
     ],
+    link: "/research/roboteam",
+    linkLabel: "View Roboteam research",
   },
   {
     title: "Indian Institute of Technology, Madras",
@@ -440,6 +376,8 @@ const life = [
       "IITM Pravartak Fellow",
       "Relevant coursework: Multi-Armed Bandits, Reinforcement Learning, Deep Learning."
     ],
+    link: "/#research",
+    linkLabel: "View research projects",
   },
   {
     title: "Machine Learning Intern - Research",

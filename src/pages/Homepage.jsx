@@ -4,6 +4,7 @@ import {
   Hero,
   Life,
   Research,
+  Tech,
   Works,
   StarsCanvas,
 } from "../components";
@@ -14,6 +15,7 @@ const Homepage = () => {
       <Hero />
       <About />
       <Life />
+      <Tech />
       <Research />
       <Works />
 

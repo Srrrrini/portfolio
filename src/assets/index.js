@@ -1,5 +1,4 @@
 import logo from "./logo.svg";
-import shitalLogo from "./shitalLogo.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -63,7 +62,6 @@ export {
   gscholar,
   logo,
   lanedetection,
-  shitalLogo,
   backend,
   creator,
   mobile,

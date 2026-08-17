@@ -61,6 +61,14 @@ const ExperienceCard = ({ experience, index }) => {
       ))}
     </ul>
   )}
+  {experience.link && (
+    <a
+      href={experience.link}
+      className="mt-4 inline-block text-white font-mono font-semibold text-[13px] hover:text-accent"
+    >
+      {experience.linkLabel || "Learn more"} &rarr;
+    </a>
+  )}
       </motion.div>
 
     </VerticalTimelineElement>
