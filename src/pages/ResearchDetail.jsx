@@ -23,6 +23,7 @@ const ResearchDetail = () => {
     tags,
     link,
     file_name,
+    badge,
   } = item;
 
   return (
@@ -35,6 +36,11 @@ const ResearchDetail = () => {
       </Link>
 
       <motion.div variants={textVariant()} initial="hidden" animate="show" className="mt-6">
+        {badge && (
+          <span className="inline-block mb-3 text-[13px] font-mono font-semibold text-accent border border-accent/40 rounded-full px-3 py-1">
+            {badge}
+          </span>
+        )}
         <h1 className={`${styles.sectionHeadText} text-[36px] md:text-[48px]`}>{name}</h1>
         <p className="text-secondary text-[16px] mt-2">
           {role}{role && organization ? " — " : ""}{organization}
@@ -68,7 +74,7 @@ const ResearchDetail = () => {
           href={link}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-4 inline-block text-white font-mono font-semibold text-[14px] hover:text-accent"
+          className="mt-4 inline-block text-white font-mono font-semibold text-[14px] bg-tertiary border border-white/10 hover:border-accent hover:text-accent rounded-xl px-5 py-3 transition-colors"
         >
           {file_name || "Learn more"} &rarr;
         </a>

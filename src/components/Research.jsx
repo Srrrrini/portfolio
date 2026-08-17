@@ -19,6 +19,7 @@ const ResearchCard = ({
   image,
   role,
   guide,
+  badge,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -47,6 +48,11 @@ const ResearchCard = ({
           </div>
 
           <div className="flex-1">
+            {badge && (
+              <span className="inline-block mb-2 text-[12px] font-mono font-semibold text-accent border border-accent/40 rounded-full px-3 py-1">
+                {badge}
+              </span>
+            )}
             <h3 className="text-white font-display font-bold text-[22px] group-hover:text-accent transition-colors">{name}</h3>
             <p className="text-secondary text-[14px] mt-1">
               {role}{role && organization ? " — " : ""}{organization}

@@ -61,19 +61,19 @@ const ProjectCard = ({
               </span>
             </Link>
 
-            <div className="mt-4 flex flex-wrap gap-x-4 gap-y-1 font-mono text-[13px]">
+            <div className="mt-4 flex flex-wrap gap-x-2 gap-y-1 font-mono text-[13px]">
               {source_code_link && (
-                <a href={source_code_link} target="_blank" rel="noopener noreferrer" className="text-white font-semibold hover:text-accent">
+                <a href={source_code_link} target="_blank" rel="noopener noreferrer" className="inline-block text-white font-semibold hover:text-accent px-2 py-2 -mx-2 -my-2">
                   CODE
                 </a>
               )}
               {report && (
-                <a href={report} target="_blank" rel="noopener noreferrer" className="text-white font-semibold hover:text-accent">
+                <a href={report} target="_blank" rel="noopener noreferrer" className="inline-block text-white font-semibold hover:text-accent px-2 py-2 -mx-2 -my-2">
                   REPORT
                 </a>
               )}
               {video && (
-                <a href={video} target="_blank" rel="noopener noreferrer" className="text-white font-semibold hover:text-accent">
+                <a href={video} target="_blank" rel="noopener noreferrer" className="inline-block text-white font-semibold hover:text-accent px-2 py-2 -mx-2 -my-2">
                   VIDEO
                 </a>
               )}

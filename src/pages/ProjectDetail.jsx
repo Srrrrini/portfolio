@@ -59,19 +59,19 @@ const ProjectDetail = () => {
         ))}
       </div>
 
-      <div className="mt-4 flex flex-wrap gap-x-6 gap-y-1 font-mono text-[14px]">
+      <div className="mt-4 flex flex-wrap gap-3 font-mono text-[14px]">
         {source_code_link && (
-          <a href={source_code_link} target="_blank" rel="noopener noreferrer" className="text-white font-semibold hover:text-accent">
+          <a href={source_code_link} target="_blank" rel="noopener noreferrer" className="text-white font-semibold bg-tertiary border border-white/10 hover:border-accent hover:text-accent rounded-xl px-4 py-2.5 transition-colors">
             CODE &rarr;
           </a>
         )}
         {report && (
-          <a href={report} target="_blank" rel="noopener noreferrer" className="text-white font-semibold hover:text-accent">
+          <a href={report} target="_blank" rel="noopener noreferrer" className="text-white font-semibold bg-tertiary border border-white/10 hover:border-accent hover:text-accent rounded-xl px-4 py-2.5 transition-colors">
             REPORT &rarr;
           </a>
         )}
         {video && (
-          <a href={video} target="_blank" rel="noopener noreferrer" className="text-white font-semibold hover:text-accent">
+          <a href={video} target="_blank" rel="noopener noreferrer" className="text-white font-semibold bg-tertiary border border-white/10 hover:border-accent hover:text-accent rounded-xl px-4 py-2.5 transition-colors">
             VIDEO &rarr;
           </a>
         )}

@@ -150,6 +150,7 @@ const ResearchExp = [
     name: "Semantic Exploration & Dense Mapping for Heterogeneous Robot Teams",
     organization : "Roboteam, CERLAB - Carnegie Mellon University",
     role:"Graduate Researcher",
+    badge: "Published — IEEE RA-L 2025",
     guide:"Professor Kenji Shimada",
     summary: "Semantic mapping system for heterogeneous robot teams on a Boston Dynamics Spot — 87.19% object map completeness, published in IEEE RA-L.",
     description:
