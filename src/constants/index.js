@@ -33,7 +33,6 @@ import {
   wellsfargo,
   roboteamFig1,
   roboteamStats,
-  cvInspectionStats,
   so101EvalChart,
   so101SuccessGrid
 } from "../assets";
